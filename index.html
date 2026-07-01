@@ -1855,7 +1855,13 @@
             }
             
             document.getElementById('d-alergenos').textContent = alergenos || '—';
-            document.getElementById('d-maridaje').textContent = maridaje || '—';
+            const maridajeWrap = document.getElementById('d-maridaje-wrap');
+            if (maridaje && maridaje !== '—') {
+                if (maridajeWrap) maridajeWrap.style.display = '';
+                document.getElementById('d-maridaje').textContent = maridaje;
+            } else {
+                if (maridajeWrap) maridajeWrap.style.display = 'none';
+            }
             document.getElementById('carta-drawer').classList.add('open');
             document.getElementById('carta-overlay').classList.add('open');
             document.body.style.overflow = 'hidden';
@@ -2179,7 +2185,7 @@
                     <span data-i18n="drawer_alergenos" style="font-size:7px; text-transform:uppercase; letter-spacing:0.45em; color:rgba(0,0,0,0.22); font-weight:700; display:block; margin-bottom:8px;">Alérgenos</span>
                     <p id="d-alergenos" style="font-size:0.82rem; color:#777; font-weight:300; margin:0; line-height:1.6;"></p>
                 </div>
-                <div>
+                <div id="d-maridaje-wrap">
                     <span data-i18n="drawer_maridaje" style="font-size:7px; text-transform:uppercase; letter-spacing:0.45em; color:rgba(0,0,0,0.22); font-weight:700; display:block; margin-bottom:8px;">Maridaje</span>
                     <p id="d-maridaje" style="font-size:0.82rem; color:var(--gold); font-style:italic; font-weight:400; margin:0; line-height:1.6;"></p>
                 </div>
