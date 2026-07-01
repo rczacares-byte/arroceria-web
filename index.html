@@ -1843,12 +1843,15 @@
             document.getElementById('d-desc').textContent = desc;
             
             const priceLabel = document.getElementById('d-price-label');
-            if (price.includes('/')) {
+            if (price === '—') {
+                if (priceLabel) priceLabel.textContent = t('drawer_precio');
+                document.getElementById('d-price').textContent = price;
+            } else if (price.includes('/')) {
                 if (priceLabel) priceLabel.textContent = t('drawer_precio2pax');
                 document.getElementById('d-price').textContent = price;
             } else {
                 if (priceLabel) priceLabel.textContent = t('drawer_precioPorPersona');
-                document.getElementById('d-price').textContent = (price.includes('€') || price === '—') ? price : price + ' €';
+                document.getElementById('d-price').textContent = price.includes('€') ? price : price + ' €';
             }
             
             document.getElementById('d-alergenos').textContent = alergenos || '—';
