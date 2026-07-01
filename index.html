@@ -1792,7 +1792,8 @@
                         ${sec.items.map((item, catIdx) => {
                             const i18n = getItemI18n(sec.category, catIdx);
                             const name = i18n.name || item.name;
-                            const desc = i18n.desc || item.desc;
+                            const alergenos = (i18n.alergenos && i18n.alergenos !== '') ? i18n.alergenos : item.alergenos;
+                            const showAlergenos = alergenos && alergenos !== '—';
                             const idx = dishIdx++;
                             const prevGroup = catIdx > 0 ? sec.items[catIdx - 1].group : null;
                             const groupTitle = (item.group && item.group !== prevGroup) ? `<div class="carta-group-title">${t('filter_' + item.group)}</div>` : '';
@@ -1800,7 +1801,7 @@
                             <div class="carta-line" data-dish="${idx}" onclick="openDrawerById(${idx})">
                                 <div style="flex:1;min-width:0;">
                                     <span class="carta-line-name">${name}</span>
-                                    <span class="carta-line-desc">${desc}</span>
+                                    ${showAlergenos ? `<span class="carta-line-desc">${t('drawer_alergenos')}: ${alergenos}</span>` : ''}
                                 </div>
                                 <div class="carta-line-dots"></div>
                                 <div class="carta-line-price-wrap">
