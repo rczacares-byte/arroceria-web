@@ -197,6 +197,18 @@
             display:block; font-size:0.68rem; color:#aaa; font-weight:300;
             font-style:italic; margin-top:2px;
         }
+        .carta-line-price-wrap {
+            display:flex; flex-direction:column; align-items:flex-end; flex-shrink:0;
+        }
+        .carta-line-price-note {
+            display:block; font-size:0.5rem; text-transform:uppercase; letter-spacing:0.12em;
+            color:#bbb; font-style:normal; font-weight:600; margin-top:2px; font-family:'Jost',sans-serif;
+        }
+        .carta-group-title {
+            font-size:9px; text-transform:uppercase; letter-spacing:0.35em;
+            color:var(--gold); font-weight:700; margin:36px 0 8px; font-family:'Jost',sans-serif;
+        }
+        .carta-group-title:first-child { margin-top:0; }
         /* Drawer */
         #carta-drawer {
             position:fixed; top:0; right:-440px; width:400px; height:100vh;
@@ -1069,13 +1081,15 @@
                 <button class="carta-filter" data-filter="compartir" data-i18n="filter_compartir">Para Compartir</button>
                 <button class="carta-filter" data-filter="entrantes" data-i18n="filter_entrantes">Entrantes</button>
                 <button class="carta-filter" data-filter="ensaladas" data-i18n="filter_ensaladas">Ensaladas</button>
-                <button class="carta-filter" data-filter="paellas" data-i18n="filter_paellas">Paellas</button>
+                <button class="carta-filter" data-filter="paellasClasicas" data-i18n="filter_paellasClasicas">Paellas Clásicas</button>
+                <button class="carta-filter" data-filter="paellasGourmet" data-i18n="filter_paellasGourmet">Paellas Gourmet</button>
                 <button class="carta-filter" data-filter="melosos" data-i18n="filter_melosos">Melosos</button>
                 <button class="carta-filter" data-filter="fideuas" data-i18n="filter_fideuas">Fideuas</button>
                 <button class="carta-filter" data-filter="carnes" data-i18n="filter_carnes">Carnes</button>
                 <button class="carta-filter" data-filter="pescados" data-i18n="filter_pescados">Pescados</button>
                 <button class="carta-filter" data-filter="guarniciones" data-i18n="filter_guarniciones">Guarniciones</button>
                 <button class="carta-filter" data-filter="postres" data-i18n="filter_postres">Postres</button>
+                <button class="carta-filter" data-filter="bebidas" data-i18n="filter_bebidas">Bebidas</button>
             </div>
         </div>
 
@@ -1373,22 +1387,29 @@
                 ]
             },
             {
-                section: "Paellas",
-                category: "paellas",
+                section: "Paellas Clásicas",
+                category: "paellasClasicas",
                 items: [
                     { name: "Paella Valenciana", desc: "Pollo de corral · conejo · judía verde plana · garrofón", price: "36€ / 70€", alergenos: "—", maridaje: "Muga Crianza, Remírez de Ganuza" },
+                    { name: "Paella de Marisco", desc: "Gambón · gamba salvaje · mejillones · almejas", price: "48€ / 94€", alergenos: "Crustáceos, moluscos, pescado", maridaje: "Belondrade y Lurton" },
+                    { name: "Paella del Senyoret", desc: "Marisco pelado · gambas · rape local", price: "46€ / 90€", alergenos: "Crustáceos, moluscos, pescado", maridaje: "Pazo de Señoráns" },
+                    { name: "Arroz Negro", desc: "Sepionet de playa · alcachofas · alioli dorado", price: "48€ / 94€", alergenos: "Moluscos, huevo", maridaje: "Hika Txakoli" },
+                    { name: "Paella de Pulpo", desc: "Pulpo asado · pimentón ahumado", price: "50€ / 95€", alergenos: "Moluscos", maridaje: "Muga Crianza" },
+                    { name: "Paella de Verduras", desc: "Selección fresca de la huerta al punto", price: "40€ / 78€", alergenos: "—", maridaje: "Hika Txakoli" }
+                ]
+            },
+            {
+                section: "Paellas Gourmet",
+                category: "paellasGourmet",
+                items: [
                     { name: "Paella de Carrilleras", desc: "Carrilleras de ternera estofadas a fuego lento", price: "46€ / 90€", alergenos: "—", maridaje: "López de Heredia Tondonia" },
                     { name: "Paella de Pato y Foie", desc: "Confit de pato · foie gras · setas", price: "50€ / 98€", alergenos: "—", maridaje: "López de Heredia Tondonia" },
                     { name: "Paella de Secreto Ibérico y Manzana", desc: "Secreto de cerdo ibérico · toques de manzana asada", price: "48€ / 94€", alergenos: "—", maridaje: "Muga Crianza" },
                     { name: "Paella de Carabineros", desc: "Carabineros enteros · fumet intenso", price: "74€ / 146€", alergenos: "Crustáceos, pescado", maridaje: "Billecart-Salmon Blanc de Blancs" },
-                    { name: "Paella de Marisco", desc: "Gambón · gamba salvaje · mejillones · almejas", price: "48€ / 94€", alergenos: "Crustáceos, moluscos, pescado", maridaje: "Belondrade y Lurton" },
-                    { name: "Paella del Senyoret", desc: "Marisco pelado · gambas · rape local", price: "46€ / 90€", alergenos: "Crustáceos, moluscos, pescado", maridaje: "Pazo de Señoráns" },
-                    { name: "Arroz Negro", desc: "Sepionet de playa · alcachofas · alioli dorado", price: "48€ / 94€", alergenos: "Moluscos, huevo", maridaje: "Hika Txakoli" },
                     { name: "Paella de Bogavante", desc: "Bogavante azul · bisque concentrado", price: "68€ / 132€", alergenos: "Crustáceos", maridaje: "Krug Grande Cuvée" },
                     { name: "Paella de Cigalas y Zamburiñas", desc: "Cigalas de costa · zamburiñas al toque de plancha", price: "58€ / 114€", alergenos: "Crustáceos, moluscos", maridaje: "Belondrade y Lurton" },
-                    { name: "Paella de Pulpo", desc: "Pulpo asado · pimentón ahumado", price: "50€ / 95€", alergenos: "Moluscos", maridaje: "Muga Crianza" },
-                    { name: "Paella de Verduras", desc: "Selección fresca de la huerta al punto", price: "40€ / 78€", alergenos: "—", maridaje: "Hika Txakoli" },
-                    { name: "Paella de Txuleta", desc: "Cortes de vaca vieja madurada", price: "75€ / 140€", alergenos: "—", maridaje: "Remírez de Ganuza Reserva" }
+                    { name: "Paella de Txuleta", desc: "Cortes de vaca vieja madurada", price: "75€ / 140€", alergenos: "—", maridaje: "Remírez de Ganuza Reserva" },
+                    { name: "Paella de Hueso de Tuétano y Solomillo Simental", desc: "Tuétano asado · solomillo de vacuno Simmental", price: "58€ / 114€", alergenos: "—", maridaje: "Remírez de Ganuza Reserva" }
                 ]
             },
             {
@@ -1453,6 +1474,36 @@
                     { name: "Nuestro brioche bañado en horchata", desc: "Dulce y tierno brioche empapado", price: "7,50", alergenos: "Gluten, leche, huevo", maridaje: "Cava dulce" },
                     { name: "Brownie de chocolate", desc: "Con helado de avellana", price: "6,50", alergenos: "Gluten, leche, huevo, frutos secos", maridaje: "Billecart Salmon" },
                     { name: "Sorbete de Mandarina o Limón", desc: "Refrescante sorbete artesanal", price: "5", alergenos: "—", maridaje: "Gramona Imperial" }
+                ]
+            },
+            {
+                section: "Bebidas",
+                category: "bebidas",
+                items: [
+                    { name: "Mahou Clásica cañero", desc: "", price: "—", alergenos: "Gluten", maridaje: "—", group: "cervezas" },
+                    { name: "Mahou Maestra", desc: "", price: "—", alergenos: "Gluten", maridaje: "—", group: "cervezas" },
+                    { name: "Mahou 5 Estrellas", desc: "", price: "—", alergenos: "Gluten", maridaje: "—", group: "cervezas" },
+                    { name: "Alhambra Especial", desc: "", price: "—", alergenos: "Gluten", maridaje: "—", group: "cervezas" },
+                    { name: "Mahou Radler", desc: "", price: "—", alergenos: "Gluten", maridaje: "—", group: "cervezas" },
+                    { name: "Mahou Sin Gluten", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "cervezas" },
+                    { name: "Agua Aquabona 500ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Agua Aquabona con gas 330ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Agua Solán de Cabras 1L", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Coca-Cola 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Coca-Cola Zero 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Fanta Naranja 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Fanta Limón 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Aquarius Limón 300ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Aquarius Naranja 300ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Fuze Tea Limón 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Sprite Limón 350ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Gaseosa 500ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "refrescos" },
+                    { name: "Tónica Royal Bliss 250ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "aperitivos" },
+                    { name: "Bitter Kas 250ml", desc: "", price: "—", alergenos: "—", maridaje: "—", group: "aperitivos" },
+                    { name: "Vaso de Sangría", desc: "", price: "—", alergenos: "Sulfitos", maridaje: "—", group: "aperitivos" },
+                    { name: "Vaso de Tinto de Verano", desc: "", price: "—", alergenos: "Sulfitos", maridaje: "—", group: "aperitivos" },
+                    { name: "Jarra de Sangría", desc: "", price: "—", alergenos: "Sulfitos", maridaje: "—", group: "aperitivos" },
+                    { name: "Jarra de Tinto de Verano", desc: "", price: "—", alergenos: "Sulfitos", maridaje: "—", group: "aperitivos" }
                 ]
             }
         ];
@@ -1743,14 +1794,19 @@
                             const name = i18n.name || item.name;
                             const desc = i18n.desc || item.desc;
                             const idx = dishIdx++;
-                            return `
+                            const prevGroup = catIdx > 0 ? sec.items[catIdx - 1].group : null;
+                            const groupTitle = (item.group && item.group !== prevGroup) ? `<div class="carta-group-title">${t('filter_' + item.group)}</div>` : '';
+                            return `${groupTitle}
                             <div class="carta-line" data-dish="${idx}" onclick="openDrawerById(${idx})">
                                 <div style="flex:1;min-width:0;">
                                     <span class="carta-line-name">${name}</span>
                                     <span class="carta-line-desc">${desc}</span>
                                 </div>
                                 <div class="carta-line-dots"></div>
-                                <span class="carta-line-price">${item.price}</span>
+                                <div class="carta-line-price-wrap">
+                                    <span class="carta-line-price">${item.price}</span>
+                                    ${item.price.includes('/') ? `<span class="carta-line-price-note">${t('precio2paxNote')}</span>` : ''}
+                                </div>
                             </div>`;
                         }).join('')}
                     </div>
@@ -1791,7 +1847,7 @@
                 document.getElementById('d-price').textContent = price;
             } else {
                 if (priceLabel) priceLabel.textContent = t('drawer_precioPorPersona');
-                document.getElementById('d-price').textContent = price.includes('€') ? price : price + ' €';
+                document.getElementById('d-price').textContent = (price.includes('€') || price === '—') ? price : price + ' €';
             }
             
             document.getElementById('d-alergenos').textContent = alergenos || '—';

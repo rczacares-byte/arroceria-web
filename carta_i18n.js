@@ -76,12 +76,39 @@ const cartaI18n = {
         alergenos: "Krustazeoak, moluskuak, sulfitoak"
       }
     ],
-    paellas: [
+    paellasClasicas: [
       {
         name: "Paella Valenciana",
         desc: "Baserri-oiloa · untxia · baina-lekeak · garrofóia",
         alergenos: ""
       },
+      {
+        name: "Itsaskien Paella",
+        desc: "Ganba handia · itsas ganbak · masusteak · txirlak",
+        alergenos: "Krustazeoak, moluskuak, arraina"
+      },
+      {
+        name: "Paella del Senyoret",
+        desc: "Itsaski zuritu · ganba · bertako izokina",
+        alergenos: "Krustazeoak, moluskuak, arraina"
+      },
+      {
+        name: "Arroz Negro",
+        desc: "Hondartza-sepioneta · orburuak · alioli urreztatu",
+        alergenos: "Moluskuak, arrautza"
+      },
+      {
+        name: "Olагарrо Paella",
+        desc: "Erretako olagarro · pimentoi ketu",
+        alergenos: "Moluskuak"
+      },
+      {
+        name: "Barazki Paella",
+        desc: "Baratzetik hartutako barazki freskoen hautaketa",
+        alergenos: ""
+      }
+    ],
+    paellasGourmet: [
       {
         name: "Masailezur-Paella",
         desc: "Txahalaren masailezurrak su motelean egosita",
@@ -103,21 +130,6 @@ const cartaI18n = {
         alergenos: "Krustazeoak, arraina"
       },
       {
-        name: "Itsaskien Paella",
-        desc: "Ganba handia · itsas ganbak · masusteak · txirlak",
-        alergenos: "Krustazeoak, moluskuak, arraina"
-      },
-      {
-        name: "Paella del Senyoret",
-        desc: "Itsaski zuritu · ganba · bertako izokina",
-        alergenos: "Krustazeoak, moluskuak, arraina"
-      },
-      {
-        name: "Arroz Negro",
-        desc: "Hondartza-sepioneta · orburuak · alioli urreztatu",
-        alergenos: "Moluskuak, arrautza"
-      },
-      {
         name: "Bogavante Paella",
         desc: "Bogavante urdina · bisque kontzentratua",
         alergenos: "Krustazeoak"
@@ -128,18 +140,13 @@ const cartaI18n = {
         alergenos: "Krustazeoak, moluskuak"
       },
       {
-        name: "Olагарrо Paella",
-        desc: "Erretako olagarro · pimentoi ketu",
-        alergenos: "Moluskuak"
-      },
-      {
-        name: "Barazki Paella",
-        desc: "Baratzetik hartutako barazki freskoen hautaketa",
+        name: "Txuleta Paella",
+        desc: "Ondutako behi zaharraren zatiak",
         alergenos: ""
       },
       {
-        name: "Txuleta Paella",
-        desc: "Ondutako behi zaharraren zatiak",
+        name: "Hezur-Muinaren eta Solomilo Simentalaren Paella",
+        desc: "Hezur-muin errea · behi solomilo simentala",
         alergenos: ""
       }
     ],
@@ -294,6 +301,32 @@ const cartaI18n = {
         desc: "Sorbete artisau freskagarria",
         alergenos: ""
       }
+    ],
+    bebidas: [
+      { name: "Mahou Klasikoa (barriletik)", desc: "", alergenos: "Glutena" },
+      { name: "Mahou Maestra", desc: "", alergenos: "Glutena" },
+      { name: "Mahou 5 Izar", desc: "", alergenos: "Glutena" },
+      { name: "Alhambra Especiala", desc: "", alergenos: "Glutena" },
+      { name: "Mahou Radler", desc: "", alergenos: "Glutena" },
+      { name: "Mahou Glutenik Gabea", desc: "", alergenos: "" },
+      { name: "Aquabona Ura 500ml", desc: "", alergenos: "" },
+      { name: "Aquabona Ur Gasduna 330ml", desc: "", alergenos: "" },
+      { name: "Solán de Cabras Ura 1L", desc: "", alergenos: "" },
+      { name: "Coca-Cola 350ml", desc: "", alergenos: "" },
+      { name: "Coca-Cola Zero 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Laranja 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Limoia 350ml", desc: "", alergenos: "" },
+      { name: "Aquarius Limoia 300ml", desc: "", alergenos: "" },
+      { name: "Aquarius Laranja 300ml", desc: "", alergenos: "" },
+      { name: "Fuze Tea Limoia 350ml", desc: "", alergenos: "" },
+      { name: "Sprite Limoia 350ml", desc: "", alergenos: "" },
+      { name: "Gaseosa 500ml", desc: "", alergenos: "" },
+      { name: "Royal Bliss Tonika 250ml", desc: "", alergenos: "" },
+      { name: "Bitter Kas 250ml", desc: "", alergenos: "" },
+      { name: "Sangria Basoa", desc: "", alergenos: "Sulfitoak" },
+      { name: "Tinto de Verano Basoa", desc: "", alergenos: "Sulfitoak" },
+      { name: "Sangria Pitxarra", desc: "", alergenos: "Sulfitoak" },
+      { name: "Tinto de Verano Pitxarra", desc: "", alergenos: "Sulfitoak" }
     ]
   },
   fr: {
@@ -373,12 +406,39 @@ const cartaI18n = {
         alergenos: "Crustacés, Mollusques, Sulfites"
       }
     ],
-    paellas: [
+    paellasClasicas: [
       {
         name: "Paella Valenciana",
         desc: "Poulet fermier · lapin · haricots verts plats · garrofón",
         alergenos: ""
       },
+      {
+        name: "Paella de Fruits de Mer",
+        desc: "Gambas géantes · crevettes sauvages · moules · coques",
+        alergenos: "Crustacés, Mollusques, Poisson"
+      },
+      {
+        name: "Paella del Senyoret",
+        desc: "Fruits de mer décortiqués · gambas · lotte locale",
+        alergenos: "Crustacés, Mollusques, Poisson"
+      },
+      {
+        name: "Riz Noir",
+        desc: "Petites seiches de plage · artichauts · aïoli doré",
+        alergenos: "Mollusques, Œuf"
+      },
+      {
+        name: "Paella de Poulpe",
+        desc: "Poulpe rôti · paprika fumé",
+        alergenos: "Mollusques"
+      },
+      {
+        name: "Paella de Légumes",
+        desc: "Sélection fraîche du potager à point",
+        alergenos: ""
+      }
+    ],
+    paellasGourmet: [
       {
         name: "Paella de Joues de Bœuf",
         desc: "Joues de veau mijotées à feu doux",
@@ -400,21 +460,6 @@ const cartaI18n = {
         alergenos: "Crustacés, Poisson"
       },
       {
-        name: "Paella de Fruits de Mer",
-        desc: "Gambas géantes · crevettes sauvages · moules · coques",
-        alergenos: "Crustacés, Mollusques, Poisson"
-      },
-      {
-        name: "Paella del Senyoret",
-        desc: "Fruits de mer décortiqués · gambas · lotte locale",
-        alergenos: "Crustacés, Mollusques, Poisson"
-      },
-      {
-        name: "Riz Noir",
-        desc: "Petites seiches de plage · artichauts · aïoli doré",
-        alergenos: "Mollusques, Œuf"
-      },
-      {
         name: "Paella de Homard",
         desc: "Homard bleu · bisque concentrée",
         alergenos: "Crustacés"
@@ -425,18 +470,13 @@ const cartaI18n = {
         alergenos: "Crustacés, Mollusques"
       },
       {
-        name: "Paella de Poulpe",
-        desc: "Poulpe rôti · paprika fumé",
-        alergenos: "Mollusques"
-      },
-      {
-        name: "Paella de Légumes",
-        desc: "Sélection fraîche du potager à point",
+        name: "Paella de Txuleta",
+        desc: "Morceaux de vieille vache maturée",
         alergenos: ""
       },
       {
-        name: "Paella de Txuleta",
-        desc: "Morceaux de vieille vache maturée",
+        name: "Paella d'Os à Moelle et Filet de Bœuf Simmental",
+        desc: "Os à moelle rôti · filet de bœuf Simmental",
         alergenos: ""
       }
     ],
@@ -591,6 +631,32 @@ const cartaI18n = {
         desc: "Sorbet artisanal rafraîchissant",
         alergenos: ""
       }
+    ],
+    bebidas: [
+      { name: "Mahou Classique (pression)", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Maestra", desc: "", alergenos: "Gluten" },
+      { name: "Mahou 5 Étoiles", desc: "", alergenos: "Gluten" },
+      { name: "Alhambra Spéciale", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Radler", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Sans Gluten", desc: "", alergenos: "" },
+      { name: "Eau Aquabona 500ml", desc: "", alergenos: "" },
+      { name: "Eau Aquabona gazeuse 330ml", desc: "", alergenos: "" },
+      { name: "Eau Solán de Cabras 1L", desc: "", alergenos: "" },
+      { name: "Coca-Cola 350ml", desc: "", alergenos: "" },
+      { name: "Coca-Cola Zero 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Orange 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Citron 350ml", desc: "", alergenos: "" },
+      { name: "Aquarius Citron 300ml", desc: "", alergenos: "" },
+      { name: "Aquarius Orange 300ml", desc: "", alergenos: "" },
+      { name: "Fuze Tea Citron 350ml", desc: "", alergenos: "" },
+      { name: "Sprite Citron 350ml", desc: "", alergenos: "" },
+      { name: "Gaseosa 500ml", desc: "", alergenos: "" },
+      { name: "Tonic Royal Bliss 250ml", desc: "", alergenos: "" },
+      { name: "Bitter Kas 250ml", desc: "", alergenos: "" },
+      { name: "Verre de Sangria", desc: "", alergenos: "Sulfites" },
+      { name: "Verre de Tinto de Verano", desc: "", alergenos: "Sulfites" },
+      { name: "Pichet de Sangria", desc: "", alergenos: "Sulfites" },
+      { name: "Pichet de Tinto de Verano", desc: "", alergenos: "Sulfites" }
     ]
   },
   en: {
@@ -670,12 +736,39 @@ const cartaI18n = {
         alergenos: "Crustaceans, Molluscs, Sulphites"
       }
     ],
-    paellas: [
+    paellasClasicas: [
       {
         name: "Paella Valenciana",
         desc: "Free-range chicken · rabbit · flat green beans · garrofón",
         alergenos: ""
       },
+      {
+        name: "Seafood Paella",
+        desc: "King prawns · wild prawns · mussels · clams",
+        alergenos: "Crustaceans, Molluscs, Fish"
+      },
+      {
+        name: "Paella del Senyoret",
+        desc: "Shelled seafood · prawns · local monkfish",
+        alergenos: "Crustaceans, Molluscs, Fish"
+      },
+      {
+        name: "Black Rice",
+        desc: "Beach cuttlefish · artichokes · golden aioli",
+        alergenos: "Molluscs, Egg"
+      },
+      {
+        name: "Octopus Paella",
+        desc: "Roasted octopus · smoked paprika",
+        alergenos: "Molluscs"
+      },
+      {
+        name: "Vegetable Paella",
+        desc: "Fresh garden vegetable selection cooked just right",
+        alergenos: ""
+      }
+    ],
+    paellasGourmet: [
       {
         name: "Beef Cheek Paella",
         desc: "Veal cheeks slow-braised over a low heat",
@@ -697,21 +790,6 @@ const cartaI18n = {
         alergenos: "Crustaceans, Fish"
       },
       {
-        name: "Seafood Paella",
-        desc: "King prawns · wild prawns · mussels · clams",
-        alergenos: "Crustaceans, Molluscs, Fish"
-      },
-      {
-        name: "Paella del Senyoret",
-        desc: "Shelled seafood · prawns · local monkfish",
-        alergenos: "Crustaceans, Molluscs, Fish"
-      },
-      {
-        name: "Black Rice",
-        desc: "Beach cuttlefish · artichokes · golden aioli",
-        alergenos: "Molluscs, Egg"
-      },
-      {
         name: "Lobster Paella",
         desc: "Blue lobster · rich concentrated bisque",
         alergenos: "Crustaceans"
@@ -722,18 +800,13 @@ const cartaI18n = {
         alergenos: "Crustaceans, Molluscs"
       },
       {
-        name: "Octopus Paella",
-        desc: "Roasted octopus · smoked paprika",
-        alergenos: "Molluscs"
-      },
-      {
-        name: "Vegetable Paella",
-        desc: "Fresh garden vegetable selection cooked just right",
+        name: "Txuleta Paella",
+        desc: "Cuts of aged old cow",
         alergenos: ""
       },
       {
-        name: "Txuleta Paella",
-        desc: "Cuts of aged old cow",
+        name: "Bone Marrow and Simmental Sirloin Paella",
+        desc: "Roasted bone marrow · Simmental beef sirloin",
         alergenos: ""
       }
     ],
@@ -888,6 +961,32 @@ const cartaI18n = {
         desc: "Refreshing artisan sorbet",
         alergenos: ""
       }
+    ],
+    bebidas: [
+      { name: "Mahou Classic (draft)", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Maestra", desc: "", alergenos: "Gluten" },
+      { name: "Mahou 5 Estrellas", desc: "", alergenos: "Gluten" },
+      { name: "Alhambra Especial", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Radler", desc: "", alergenos: "Gluten" },
+      { name: "Mahou Gluten-Free", desc: "", alergenos: "" },
+      { name: "Aquabona Water 500ml", desc: "", alergenos: "" },
+      { name: "Aquabona Sparkling Water 330ml", desc: "", alergenos: "" },
+      { name: "Solán de Cabras Water 1L", desc: "", alergenos: "" },
+      { name: "Coca-Cola 350ml", desc: "", alergenos: "" },
+      { name: "Coca-Cola Zero 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Orange 350ml", desc: "", alergenos: "" },
+      { name: "Fanta Lemon 350ml", desc: "", alergenos: "" },
+      { name: "Aquarius Lemon 300ml", desc: "", alergenos: "" },
+      { name: "Aquarius Orange 300ml", desc: "", alergenos: "" },
+      { name: "Fuze Tea Lemon 350ml", desc: "", alergenos: "" },
+      { name: "Sprite Lemon 350ml", desc: "", alergenos: "" },
+      { name: "Gaseosa 500ml", desc: "", alergenos: "" },
+      { name: "Royal Bliss Tonic 250ml", desc: "", alergenos: "" },
+      { name: "Bitter Kas 250ml", desc: "", alergenos: "" },
+      { name: "Glass of Sangria", desc: "", alergenos: "Sulphites" },
+      { name: "Glass of Tinto de Verano", desc: "", alergenos: "Sulphites" },
+      { name: "Jug of Sangria", desc: "", alergenos: "Sulphites" },
+      { name: "Jug of Tinto de Verano", desc: "", alergenos: "Sulphites" }
     ]
   }
 };
