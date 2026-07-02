@@ -69,11 +69,6 @@ const cartaI18n = {
         name: "Tomatea Ventreskaarekin",
         desc: "Tomate gorri-arrosaren datu lodiak atun-ventreskaren xerra zukutsuekin",
         alergenos: "Arraina"
-      },
-      {
-        name: "Especial Terreta",
-        desc: "Itsaskien hautaketa bikaina hosto gazte eta biguna duen mezclum gainean, vinagreta leun batekin",
-        alergenos: "Krustazeoak, moluskuak, sulfitoak"
       }
     ],
     paellasClasicas: [
@@ -406,11 +401,6 @@ const cartaI18n = {
         name: "Tomate à la Ventrèche",
         desc: "Épais dés de tomate rose accompagnés de savoureuses lamelles de ventrèche de thon",
         alergenos: "Poisson"
-      },
-      {
-        name: "Spécial Terreta",
-        desc: "Exquise sélection de fruits de mer sur mesclun de jeunes pousses et vinaigrette légère",
-        alergenos: "Crustacés, Mollusques, Sulfites"
       }
     ],
     paellasClasicas: [
@@ -743,11 +733,6 @@ const cartaI18n = {
         name: "Tomato with Tuna Belly",
         desc: "Thick slices of pink tomato with juicy flakes of tuna belly",
         alergenos: "Fish"
-      },
-      {
-        name: "Especial Terreta",
-        desc: "Exquisite selection of seafood on a bed of tender young leaves with a light vinaigrette",
-        alergenos: "Crustaceans, Molluscs, Sulphites"
       }
     ],
     paellasClasicas: [
