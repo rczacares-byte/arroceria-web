@@ -651,6 +651,27 @@
         }, 800);
     </script>
 
+    <!-- SELECTOR DE IDIOMA (solo al entrar directamente a La Carta, ej. desde QR) -->
+    <div id="lang-gate" style="position:fixed; inset:0; background:#0a0a0a; z-index:9999999; display:none; flex-direction:column; align-items:center; justify-content:center; gap:40px; padding:40px; text-align:center;">
+        <img src="Imagenes/logo.png" alt="La Terreta" style="width:110px; height:110px; object-fit:contain; opacity:0.9;">
+        <span style="font-size:9px; text-transform:uppercase; letter-spacing:0.35em; color:var(--gold); font-weight:700; line-height:2.2;">Selecciona tu idioma<br>Hautatu hizkuntza · Choisissez votre langue · Choose your language</span>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center;">
+            <button onclick="chooseLangAndEnterCarta('es')" class="lang-gate-btn">ES · Español</button>
+            <button onclick="chooseLangAndEnterCarta('eu')" class="lang-gate-btn">EU · Euskera</button>
+            <button onclick="chooseLangAndEnterCarta('fr')" class="lang-gate-btn">FR · Français</button>
+            <button onclick="chooseLangAndEnterCarta('en')" class="lang-gate-btn">EN · English</button>
+        </div>
+    </div>
+    <style>
+        .lang-gate-btn {
+            background:none; border:1px solid rgba(255,255,255,0.25); color:#fff;
+            padding:16px 30px; font-size:11px; text-transform:uppercase; letter-spacing:0.2em;
+            font-family:'Jost',sans-serif; font-weight:500; cursor:pointer; border-radius:2px;
+            transition:all 0.3s; min-width:150px;
+        }
+        .lang-gate-btn:hover { background:var(--gold); border-color:var(--gold); color:#000; }
+    </style>
+
     <!-- NAVEGACIÓN -->
     <nav id="main-nav" class="fixed nav-container flex justify-between items-center transition-all">
         <a href="javascript:void(0)" onclick="navigateTo('inicio')" class="flex items-center">
@@ -2097,10 +2118,21 @@
         // Soporte para enlaces directos con hash (ej: misitio.com/#carta)
         if (window.location.hash) {
             const page = window.location.hash.substring(1);
-            if (document.getElementById('view-' + page)) {
+            if (page === 'carta') {
+                // Enlace directo a La Carta (ej. desde el QR de mesa): pide idioma antes de mostrarla
+                document.getElementById('lang-gate').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            } else if (document.getElementById('view-' + page)) {
                 // Pequeño retraso para asegurar que todo el DOM está listo
                 setTimeout(() => navigateTo(page), 50);
             }
+        }
+
+        function chooseLangAndEnterCarta(lang) {
+            setLanguage(lang);
+            document.getElementById('lang-gate').style.display = 'none';
+            document.body.style.overflow = '';
+            navigateTo('carta');
         }
 
         /* ============================================================
