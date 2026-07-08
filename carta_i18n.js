@@ -57,6 +57,11 @@ const cartaI18n = {
         name: "Olagarro Parmentierekin",
         desc: "Erretan erreak dauden olagarro tenku bat, patata ke-usnezko base leun eta sedatsu baten gainean",
         alergenos: "Moluskuak, esnea"
+      },
+      {
+        name: "Hezur-Muina Brasan, Kristalezko Ogi Tostadekin eta Pico de Gallorekin",
+        desc: "Hezur-muin brasan errea, kristalezko ogi tostadak eta pico de gallo fresko",
+        alergenos: "Glutena"
       }
     ],
     ensaladas: [
@@ -69,6 +74,11 @@ const cartaI18n = {
         name: "Tomatea Ventreskaarekin",
         desc: "Tomate gorri-arrosaren datu lodiak atun-ventreskaren xerra zukutsuekin",
         alergenos: "Arraina"
+      },
+      {
+        name: "Entsalada Greziarra",
+        desc: "Tomatea, pepinoa, tipula morea, kalamata olibak eta feta gazta, oreganorekin eta oliba-olio birjinarekin",
+        alergenos: "Esnea"
       }
     ],
     paellasClasicas: [
@@ -389,6 +399,11 @@ const cartaI18n = {
         name: "Poulpe avec Parmentier de Pomme de Terre",
         desc: "Tendre tentacule de poulpe rôti sur une base onctueuse et soyeuse de pomme de terre fumée",
         alergenos: "Mollusques, Lait"
+      },
+      {
+        name: "Os à Moelle Braisé, Tostas de Pain Cristal et Pico de Gallo",
+        desc: "Os à moelle grillé à la braise, tostas de pain cristal et pico de gallo frais",
+        alergenos: "Gluten"
       }
     ],
     ensaladas: [
@@ -401,6 +416,11 @@ const cartaI18n = {
         name: "Tomate à la Ventrèche",
         desc: "Épais dés de tomate rose accompagnés de savoureuses lamelles de ventrèche de thon",
         alergenos: "Poisson"
+      },
+      {
+        name: "Salade Grecque",
+        desc: "Tomate, concombre, oignon rouge, olives kalamata et feta, avec origan et huile d'olive vierge",
+        alergenos: "Lait"
       }
     ],
     paellasClasicas: [
@@ -721,6 +741,11 @@ const cartaI18n = {
         name: "Octopus with Potato Parmentier",
         desc: "Tender roasted octopus tentacle over a silky, smoky potato purée",
         alergenos: "Molluscs, Milk"
+      },
+      {
+        name: "Grilled Bone Marrow with Cristal Bread Toasts and Pico de Gallo",
+        desc: "Bone marrow grilled over embers, cristal bread toasts and fresh pico de gallo",
+        alergenos: "Gluten"
       }
     ],
     ensaladas: [
@@ -733,6 +758,11 @@ const cartaI18n = {
         name: "Tomato with Tuna Belly",
         desc: "Thick slices of pink tomato with juicy flakes of tuna belly",
         alergenos: "Fish"
+      },
+      {
+        name: "Greek Salad",
+        desc: "Tomato, cucumber, red onion, kalamata olives and feta cheese with oregano and virgin olive oil",
+        alergenos: "Milk"
       }
     ],
     paellasClasicas: [
