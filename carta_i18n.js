@@ -222,7 +222,7 @@ const cartaI18n = {
       },
       {
         name: "Vacum Hautaketako Txahal-Solomo",
-        desc: "Foie grasekin +4€. Saltsak: Roquefort, Fruitu Gorri, Piperbeltza",
+        desc: "Foie grasekin +4€. Saltsak: Roquefort, Piperbeltza",
         alergenos: "Esnea"
       },
       {
@@ -564,7 +564,7 @@ const cartaI18n = {
       },
       {
         name: "Filet de Veau Sélection Vacum",
-        desc: "Avec Foie Gras +4€. Sauces : Roquefort, Fruits Rouges, Poivre",
+        desc: "Avec Foie Gras +4€. Sauces : Roquefort, Poivre",
         alergenos: "Lait"
       },
       {
@@ -906,7 +906,7 @@ const cartaI18n = {
       },
       {
         name: "Vacum Selection Veal Fillet",
-        desc: "With Foie Gras +€4. Sauces: Roquefort, Red Berry, Peppercorn",
+        desc: "With Foie Gras +€4. Sauces: Roquefort, Peppercorn",
         alergenos: "Milk"
       },
       {
