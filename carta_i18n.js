@@ -59,8 +59,8 @@ const cartaI18n = {
         alergenos: "Moluskuak, esnea"
       },
       {
-        name: "Hezur-Muina Brasan, Kristalezko Ogi Tostadekin eta Pico de Gallorekin",
-        desc: "Hezur-muin brasan errea, kristalezko ogi tostadak eta pico de gallo fresko",
+        name: "Hezur-Muina, Kristalezko Ogi Tostadekin eta Pico de Gallorekin",
+        desc: "Hezur-muin errea, kristalezko ogi tostadak eta pico de gallo fresko",
         alergenos: "Glutena"
       }
     ],
@@ -238,7 +238,7 @@ const cartaI18n = {
         alergenos: "Arraina"
       },
       {
-        name: "Merluzak saltsa berdean",
+        name: "Mediterraneoko Merluza",
         desc: "Saltsa berde tradizional eta txirlaz lagundua",
         alergenos: "Arraina, moluskuak"
       },
@@ -401,8 +401,8 @@ const cartaI18n = {
         alergenos: "Mollusques, Lait"
       },
       {
-        name: "Os à Moelle Braisé, Tostas de Pain Cristal et Pico de Gallo",
-        desc: "Os à moelle grillé à la braise, tostas de pain cristal et pico de gallo frais",
+        name: "Os à Moelle, Tostas de Pain Cristal et Pico de Gallo",
+        desc: "Os à moelle rôti, tostas de pain cristal et pico de gallo frais",
         alergenos: "Gluten"
       }
     ],
@@ -580,7 +580,7 @@ const cartaI18n = {
         alergenos: "Poisson"
       },
       {
-        name: "Merlu en Sauce Verte",
+        name: "Merlu à la Méditerranéenne",
         desc: "Accompagné d'une sauce verte traditionnelle et de coques",
         alergenos: "Poisson, Mollusques"
       },
@@ -743,8 +743,8 @@ const cartaI18n = {
         alergenos: "Molluscs, Milk"
       },
       {
-        name: "Grilled Bone Marrow with Cristal Bread Toasts and Pico de Gallo",
-        desc: "Bone marrow grilled over embers, cristal bread toasts and fresh pico de gallo",
+        name: "Bone Marrow with Cristal Bread Toasts and Pico de Gallo",
+        desc: "Roasted bone marrow, cristal bread toasts and fresh pico de gallo",
         alergenos: "Gluten"
       }
     ],
@@ -922,7 +922,7 @@ const cartaI18n = {
         alergenos: "Fish"
       },
       {
-        name: "Hake in Green Sauce",
+        name: "Mediterranean Hake",
         desc: "Served with traditional green sauce and clams",
         alergenos: "Fish, Molluscs"
       },
