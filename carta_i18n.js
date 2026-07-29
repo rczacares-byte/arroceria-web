@@ -54,7 +54,7 @@ const cartaI18n = {
         alergenos: "Moluskuak"
       },
       {
-        name: "Olagarro Parmentierekin",
+        name: "Olagarroa Pimentoi Parmentierraren Gainean",
         desc: "Erretan erreak dauden olagarro tenku bat, patata ke-usnezko base leun eta sedatsu baten gainean",
         alergenos: "Moluskuak, esnea"
       },
@@ -396,7 +396,7 @@ const cartaI18n = {
         alergenos: "Mollusques"
       },
       {
-        name: "Poulpe avec Parmentier de Pomme de Terre",
+        name: "Poulpe sur Parmentier au Paprika",
         desc: "Tendre tentacule de poulpe rôti sur une base onctueuse et soyeuse de pomme de terre fumée",
         alergenos: "Mollusques, Lait"
       },
@@ -738,7 +738,7 @@ const cartaI18n = {
         alergenos: "Molluscs"
       },
       {
-        name: "Octopus with Potato Parmentier",
+        name: "Octopus over Paprika Parmentier",
         desc: "Tender roasted octopus tentacle over a silky, smoky potato purée",
         alergenos: "Molluscs, Milk"
       },
@@ -1030,8 +1030,6 @@ const cartaI18n = {
 const wineI18n = {
   eu: [
     { desc: "Zitriko eta bizia." , pairing: "Barazki tempurarako ezin hobea." },
-    { desc: "Usainduna eta egitura onekoa." },
-    { desc: "Godello adierazkorra eta minerala." },
     { desc: "Freskoa eta inguratzailea." },
     { desc: "Zurizko gaztea eta orekatua." },
     { desc: "Fruta tropikalen notak eta azidotasun ona.", pairing: "Bogavantearen arroz melosorako gomendatua." },
@@ -1062,7 +1060,6 @@ const wineI18n = {
     { desc: "Garnatxa freskoa eta bizia." },
     { desc: "Leuna, marrubi eta lur hezeen notakekin.", pairing: "Bakailao-bizkar-hezurrarako ezin hobea." },
     { desc: "Burgundiako elegantzia sublimea." },
-    { desc: "Mundu Berriko Pinot Noir garbitasun handikoa." },
     { desc: "Espeziatu eta indartsua.", pairing: "Parrilako haragiekin ezin hobea uztartzen da." },
     { desc: "Freskoa, fruta zuri eta burbuila finaren notekin.", pairing: "Entrantes: Mejillones 'Terreta' edo Nabarroak." },
     { desc: "Elegantea, ondutako notak (fruitu lehorrak) eta labean erretako sagarra.", pairing: "Arrozak: Paella Valenciana edo Arroz del Senyoret." },
@@ -1076,8 +1073,6 @@ const wineI18n = {
   ],
   fr: [
     { desc: "Citronné et vif." , pairing: "Idéal pour les Légumes en tempura." },
-    { desc: "Aromatique avec une belle structure." },
-    { desc: "Godello expressif et minéral." },
     { desc: "Frais et enveloppant." },
     { desc: "Blanc jeune et équilibré." },
     { desc: "Notes de fruits tropicaux et belle acidité.", pairing: "Recommandé pour le Riz crémeux au homard." },
@@ -1108,7 +1103,6 @@ const wineI18n = {
     { desc: "Grenache fraîche et vive." },
     { desc: "Souple, avec des notes de fraise et de terre humide.", pairing: "Idéal pour le Dos de Cabillaud." },
     { desc: "L'élégance sublime de la Bourgogne." },
-    { desc: "Pinot Noir du Nouveau Monde d'une grande pureté." },
     { desc: "Épicé et puissant.", pairing: "S'accorde parfaitement avec les viandes grillées." },
     { desc: "Frais, avec des notes de fruits blancs et une fine bulle.", pairing: "Entrées : Moules 'Terreta' ou Couteaux." },
     { desc: "Élégant, notes de vieillissement (fruits à coque) et pomme rôtie.", pairing: "Riz : Paella Valenciana ou Riz del Senyoret." },
@@ -1122,8 +1116,6 @@ const wineI18n = {
   ],
   en: [
     { desc: "Citrusy and vibrant.", pairing: "Ideal with Vegetables in Tempura." },
-    { desc: "Aromatic with good structure." },
-    { desc: "Expressive and mineral Godello." },
     { desc: "Fresh and enveloping." },
     { desc: "Young and balanced white." },
     { desc: "Tropical fruit notes and good acidity.", pairing: "Recommended with Creamy Lobster Rice." },
@@ -1154,7 +1146,6 @@ const wineI18n = {
     { desc: "Fresh and vibrant Grenache." },
     { desc: "Soft, with notes of strawberry and damp earth.", pairing: "Ideal for Salt Cod Loin." },
     { desc: "The sublime elegance of Burgundy." },
-    { desc: "New World Pinot Noir of great purity." },
     { desc: "Spiced and powerful.", pairing: "Pairs perfectly with grilled meats." },
     { desc: "Fresh, with notes of white fruit and fine bubbles.", pairing: "Starters: Mejillones 'Terreta' or Razor Clams." },
     { desc: "Elegant, aged notes (tree nuts) and roasted apple.", pairing: "Rices: Paella Valenciana or Rice del Senyoret." },
