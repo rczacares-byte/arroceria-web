@@ -1809,6 +1809,10 @@
                 <div class="carta-category" data-cat="${sec.category}" style="margin-bottom:80px;">
                     <h2 class="carta-cat-title">${t('filter_' + sec.category) || sec.section}</h2>
                     <span class="carta-cat-sub">${t('catSub_' + sec.category) || ''}</span>
+                    ${(sec.category === 'paellasClasicas' || sec.category === 'paellasGourmet') ? `
+                    <div style="margin:20px 0 0; padding-left:20px; border-left:2px solid var(--gold); max-width:560px;">
+                        <p style="color:#bbb; font-size:0.75rem; line-height:1.9; font-style:italic; font-weight:300; margin:0;">${t('qrWarning_text')}</p>
+                    </div>` : ''}
                     <div>
                         ${sec.items.map((item, catIdx) => {
                             const i18n = getItemI18n(sec.category, catIdx);
