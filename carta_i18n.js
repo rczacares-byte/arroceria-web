@@ -243,7 +243,7 @@ const cartaI18n = {
         alergenos: "Arraina, moluskuak"
       },
       {
-        name: "Labaztatutako Izokina",
+        name: "Rapea Labean",
         desc: "Pisto eta pataten gainean",
         alergenos: "Arraina"
       },
@@ -585,7 +585,7 @@ const cartaI18n = {
         alergenos: "Poisson, Mollusques"
       },
       {
-        name: "Lotte Grillée",
+        name: "Lotte au Four",
         desc: "Sur pisto et pommes de terre",
         alergenos: "Poisson"
       },
@@ -927,7 +927,7 @@ const cartaI18n = {
         alergenos: "Fish, Molluscs"
       },
       {
-        name: "Grilled Monkfish",
+        name: "Baked Monkfish",
         desc: "On pisto with potatoes",
         alergenos: "Fish"
       },
@@ -1063,7 +1063,7 @@ const wineI18n = {
     { desc: "Espeziatu eta indartsua.", pairing: "Parrilako haragiekin ezin hobea uztartzen da." },
     { desc: "Freskoa, fruta zuri eta burbuila finaren notekin.", pairing: "Entrantes: Mejillones 'Terreta' edo Nabarroak." },
     { desc: "Elegantea, ondutako notak (fruitu lehorrak) eta labean erretako sagarra.", pairing: "Arrozak: Paella Valenciana edo Arroz del Senyoret." },
-    { desc: "Krematsua, lore zuri eta brioche notak.", pairing: "Arraiak: Labaztatutako Izokina edo Itsaski Nahasketa." },
+    { desc: "Krematsua, lore zuri eta brioche notak.", pairing: "Arraiak: Rapea Labean edo Itsaski Nahasketa." },
     { desc: "Indartsua eta egiturazkoa, gorputz eta heltzarekin.", pairing: "Haragiak: Solomo edo Entrekota." },
     { desc: "Apur bat gozoa eta fruitu-usnea." },
     { desc: "Gozoki naturala, oso usainduna (loreak, mahats freskoa) eta graduazio baxua.", pairing: "Postre: Mandarina sorbetea edo Hortxatazko Brioche." },
@@ -1106,7 +1106,7 @@ const wineI18n = {
     { desc: "Épicé et puissant.", pairing: "S'accorde parfaitement avec les viandes grillées." },
     { desc: "Frais, avec des notes de fruits blancs et une fine bulle.", pairing: "Entrées : Moules 'Terreta' ou Couteaux." },
     { desc: "Élégant, notes de vieillissement (fruits à coque) et pomme rôtie.", pairing: "Riz : Paella Valenciana ou Riz del Senyoret." },
-    { desc: "Crémeux, notes de fleurs blanches et de brioche.", pairing: "Poissons : Lotte grillée ou Mix de Fruits de Mer." },
+    { desc: "Crémeux, notes de fleurs blanches et de brioche.", pairing: "Poissons : Lotte au four ou Mix de Fruits de Mer." },
     { desc: "Puissant et structuré, avec du corps et de la maturité.", pairing: "Viandes : Filet ou Entrecôte." },
     { desc: "Légèrement doux et fruité." },
     { desc: "Doux naturel, très aromatique (fleurs, raisin frais) et faible degré.", pairing: "Desserts : Sorbet mandarine ou Brioche à l'Horchata." },
@@ -1149,7 +1149,7 @@ const wineI18n = {
     { desc: "Spiced and powerful.", pairing: "Pairs perfectly with grilled meats." },
     { desc: "Fresh, with notes of white fruit and fine bubbles.", pairing: "Starters: Mejillones 'Terreta' or Razor Clams." },
     { desc: "Elegant, aged notes (tree nuts) and roasted apple.", pairing: "Rices: Paella Valenciana or Rice del Senyoret." },
-    { desc: "Creamy, notes of white blossom and brioche.", pairing: "Fish: Grilled Monkfish or Seafood Mix." },
+    { desc: "Creamy, notes of white blossom and brioche.", pairing: "Fish: Baked Monkfish or Seafood Mix." },
     { desc: "Powerful and structured, with body and maturity.", pairing: "Meat: Fillet or Sirloin steak." },
     { desc: "Lightly sweet and fruity." },
     { desc: "Naturally sweet, very aromatic (flowers, fresh grape) and low alcohol.", pairing: "Desserts: Mandarin Sorbet or Brioche Soaked in Horchata." },
