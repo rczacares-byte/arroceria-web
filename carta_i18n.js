@@ -44,8 +44,8 @@ const cartaI18n = {
         alergenos: "Moluskuak"
       },
       {
-        name: "Mejillones Terreta",
-        desc: "Harri-masustare benetakoak lurrunetan irekita gure etxeko saltsa beroarekin",
+        name: "Muskuiluak Plantxan",
+        desc: "Harri-masustare benetakoak plantxan eginda gure etxeko saltsa beroarekin",
         alergenos: "Moluskuak"
       },
       {
@@ -386,8 +386,8 @@ const cartaI18n = {
         alergenos: "Mollusques"
       },
       {
-        name: "Moules Terreta",
-        desc: "Authentiques moules de roche ouvertes à la vapeur avec notre sauce chaude maison",
+        name: "Moules à la Plancha",
+        desc: "Authentiques moules de roche à la plancha avec notre sauce chaude maison",
         alergenos: "Mollusques"
       },
       {
@@ -728,8 +728,8 @@ const cartaI18n = {
         alergenos: "Molluscs"
       },
       {
-        name: "Mejillones Terreta",
-        desc: "Authentic rock mussels steamed open with our warm house sauce",
+        name: "Grilled Mussels",
+        desc: "Authentic rock mussels grilled on the plancha with our warm house sauce",
         alergenos: "Molluscs"
       },
       {
@@ -1061,7 +1061,7 @@ const wineI18n = {
     { desc: "Leuna, marrubi eta lur hezeen notakekin.", pairing: "Bakailao-bizkar-hezurrarako ezin hobea." },
     { desc: "Burgundiako elegantzia sublimea." },
     { desc: "Espeziatu eta indartsua.", pairing: "Parrilako haragiekin ezin hobea uztartzen da." },
-    { desc: "Freskoa, fruta zuri eta burbuila finaren notekin.", pairing: "Entrantes: Mejillones 'Terreta' edo Nabarroak." },
+    { desc: "Freskoa, fruta zuri eta burbuila finaren notekin.", pairing: "Entrantes: Muskuiluak Plantxan edo Nabarroak." },
     { desc: "Elegantea, ondutako notak (fruitu lehorrak) eta labean erretako sagarra.", pairing: "Arrozak: Paella Valenciana edo Arroz del Senyoret." },
     { desc: "Krematsua, lore zuri eta brioche notak.", pairing: "Arraiak: Rapea Labean edo Itsaski Nahasketa." },
     { desc: "Indartsua eta egiturazkoa, gorputz eta heltzarekin.", pairing: "Haragiak: Solomo edo Entrekota." },
@@ -1104,7 +1104,7 @@ const wineI18n = {
     { desc: "Souple, avec des notes de fraise et de terre humide.", pairing: "Idéal pour le Dos de Cabillaud." },
     { desc: "L'élégance sublime de la Bourgogne." },
     { desc: "Épicé et puissant.", pairing: "S'accorde parfaitement avec les viandes grillées." },
-    { desc: "Frais, avec des notes de fruits blancs et une fine bulle.", pairing: "Entrées : Moules 'Terreta' ou Couteaux." },
+    { desc: "Frais, avec des notes de fruits blancs et une fine bulle.", pairing: "Entrées : Moules à la Plancha ou Couteaux." },
     { desc: "Élégant, notes de vieillissement (fruits à coque) et pomme rôtie.", pairing: "Riz : Paella Valenciana ou Riz del Senyoret." },
     { desc: "Crémeux, notes de fleurs blanches et de brioche.", pairing: "Poissons : Lotte au four ou Mix de Fruits de Mer." },
     { desc: "Puissant et structuré, avec du corps et de la maturité.", pairing: "Viandes : Filet ou Entrecôte." },
@@ -1147,7 +1147,7 @@ const wineI18n = {
     { desc: "Soft, with notes of strawberry and damp earth.", pairing: "Ideal for Salt Cod Loin." },
     { desc: "The sublime elegance of Burgundy." },
     { desc: "Spiced and powerful.", pairing: "Pairs perfectly with grilled meats." },
-    { desc: "Fresh, with notes of white fruit and fine bubbles.", pairing: "Starters: Mejillones 'Terreta' or Razor Clams." },
+    { desc: "Fresh, with notes of white fruit and fine bubbles.", pairing: "Starters: Grilled Mussels or Razor Clams." },
     { desc: "Elegant, aged notes (tree nuts) and roasted apple.", pairing: "Rices: Paella Valenciana or Rice del Senyoret." },
     { desc: "Creamy, notes of white blossom and brioche.", pairing: "Fish: Baked Monkfish or Seafood Mix." },
     { desc: "Powerful and structured, with body and maturity.", pairing: "Meat: Fillet or Sirloin steak." },
