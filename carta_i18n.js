@@ -302,7 +302,7 @@ const cartaI18n = {
         alergenos: "Glutena, esnea, arrautza, fruitu lehorrak"
       },
       {
-        name: "Mandarina edo Limoi Sorbetea",
+        name: "Mandarina Sorbetea",
         desc: "Sorbete artisau freskagarria",
         alergenos: ""
       }
@@ -644,7 +644,7 @@ const cartaI18n = {
         alergenos: "Gluten, Lait, Œuf, Fruits à coque"
       },
       {
-        name: "Sorbet Mandarine ou Citron",
+        name: "Sorbet Mandarine",
         desc: "Sorbet artisanal rafraîchissant",
         alergenos: ""
       }
@@ -986,7 +986,7 @@ const cartaI18n = {
         alergenos: "Gluten, Milk, Egg, Tree nuts"
       },
       {
-        name: "Mandarin or Lemon Sorbet",
+        name: "Mandarin Sorbet",
         desc: "Refreshing artisan sorbet",
         alergenos: ""
       }
