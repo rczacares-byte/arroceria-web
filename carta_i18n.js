@@ -49,8 +49,8 @@ const cartaI18n = {
         alergenos: "Moluskuak"
       },
       {
-        name: "Labaztatutako Bieiriak (9 ale)",
-        desc: "Bieiriaren haragi gozoa zigilatu eta tenkoa, kanpoko erretze fin batekin (9 ale)",
+        name: "Zamburiñak Plantxan (9 ale)",
+        desc: "Zamburiñaren haragi gozoa zigilatu eta tenkoa, kanpoko erretze fin batekin (9 ale)",
         alergenos: "Moluskuak"
       },
       {
@@ -391,8 +391,8 @@ const cartaI18n = {
         alergenos: "Mollusques"
       },
       {
-        name: "Coquilles Saint-Jacques Grillées (9 pièces)",
-        desc: "Tendre noix de Saint-Jacques snackée et ferme, avec un léger toasté extérieur (9 pièces)",
+        name: "Pétoncles Grillés (9 pièces)",
+        desc: "Tendre noix de pétoncle snackée et ferme, avec un léger toasté extérieur (9 pièces)",
         alergenos: "Mollusques"
       },
       {
@@ -1042,7 +1042,7 @@ const wineI18n = {
     { desc: "Exotikoa (litxia, arrosa-petaloak).", pairing: "Harrigarria labaztatutako olаgarroarekin." },
     { desc: "Elegantea eta lehorra." },
     { desc: "Azidotasun distiratsua eta fruta notak." },
-    { desc: "Oso minerala eta lehorra.", pairing: "Labaztatutako bieiriakekin bikain uztartzen da." },
+    { desc: "Oso minerala eta lehorra.", pairing: "Zamburiñekin bikain uztartzen da." },
     { desc: "Txakoli beltz tradizionala." },
     { desc: "Fruta gorri eta erregalitz leherketea.", pairing: "Pintxorako ezin hobea: Soriako Torreznoak eta Bravas 'Terreta'." },
     { desc: "Crianza klasiko eta polifazetikoa." },
@@ -1085,7 +1085,7 @@ const wineI18n = {
     { desc: "Exotique (litchi, pétales de rose).", pairing: "Surprenant avec le Poulpe grillé." },
     { desc: "Élégant et sec." },
     { desc: "Acidité brillante et notes fruitées." },
-    { desc: "Très minéral et sec.", pairing: "Mariage excellent avec les Coquilles Saint-Jacques grillées." },
+    { desc: "Très minéral et sec.", pairing: "Mariage excellent avec les Pétoncles grillés." },
     { desc: "Le txakoli rouge traditionnel." },
     { desc: "Explosion de fruits rouges et de réglisse.", pairing: "Parfait pour le grignotage : Torreznos de Soria et Bravas 'Terreta'." },
     { desc: "Crianza classique et polyvalent." },
