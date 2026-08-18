@@ -278,6 +278,11 @@ const cartaI18n = {
         name: "Salteaturiko Barazkiak",
         desc: "Barazki hautaketa wokean prestatua",
         alergenos: ""
+      },
+      {
+        name: "Alioli",
+        desc: "Etxeko alioli",
+        alergenos: "Arrautza"
       }
     ],
     postres: [
@@ -620,6 +625,11 @@ const cartaI18n = {
         name: "Légumes sautés",
         desc: "Sélection de légumes au wok",
         alergenos: ""
+      },
+      {
+        name: "Aïoli",
+        desc: "Aïoli maison",
+        alergenos: "Œuf"
       }
     ],
     postres: [
@@ -962,6 +972,11 @@ const cartaI18n = {
         name: "Stir-fried vegetables",
         desc: "Selection of vegetables wok-tossed",
         alergenos: ""
+      },
+      {
+        name: "Aioli",
+        desc: "Homemade aioli",
+        alergenos: "Egg"
       }
     ],
     postres: [

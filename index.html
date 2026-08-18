@@ -1491,7 +1491,8 @@
                     { name: "Pimientos del Padrón", desc: "Unos pican y otros no", price: "4", alergenos: "—", maridaje: "—" },
                     { name: "Patatas fritas", desc: "Corte tradicional", price: "3,50", alergenos: "—", maridaje: "—" },
                     { name: "Patatas panaderas", desc: "Asadas lentamente con cebolla", price: "3,50", alergenos: "—", maridaje: "—" },
-                    { name: "Salteado de verduras", desc: "Selección de verduras al wok", price: "3,50", alergenos: "—", maridaje: "—" }
+                    { name: "Salteado de verduras", desc: "Selección de verduras al wok", price: "3,50", alergenos: "—", maridaje: "—" },
+                    { name: "Alioli", desc: "Alioli casero", price: "1,00", alergenos: "Huevo", maridaje: "—" }
                 ]
             },
             {
@@ -1811,7 +1812,8 @@
                     <span class="carta-cat-sub">${t('catSub_' + sec.category) || ''}</span>
                     ${(sec.category === 'paellasClasicas' || sec.category === 'paellasGourmet') ? `
                     <div style="margin:20px 0 0; padding-left:20px; border-left:2px solid var(--gold); max-width:560px;">
-                        <p style="color:#bbb; font-size:0.75rem; line-height:1.9; font-style:italic; font-weight:300; margin:0;">${t('qrWarning_text')}</p>
+                        <p style="color:#bbb; font-size:0.75rem; line-height:1.9; font-style:italic; font-weight:300; margin:0 0 8px;">${t('qrWarning_text')}</p>
+                        <p style="color:#bbb; font-size:0.75rem; line-height:1.9; font-style:italic; font-weight:300; margin:0;">${t('alioliNote')}</p>
                     </div>` : ''}
                     <div>
                         ${sec.items.map((item, catIdx) => {
