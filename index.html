@@ -1403,7 +1403,7 @@
                     { name: "Mejillones a la Plancha", desc: "Auténticos mejillones de roca a la plancha con nuestra salsa cálida de la casa", price: "16€", alergenos: "Moluscos", maridaje: "Cerveza rubia fría" },
                     { name: "Zamburiñas a la plancha (9ud)", desc: "Dulce carne de zamburiña sellada y tersa, con un sutil tostado exterior (9 unidades)", price: "21€", alergenos: "Moluscos", maridaje: "Albariño, Cava Brut" },
                     { name: "Pulpo sobre Parmentier de Pimentón", desc: "Tierno tentáculo de pulpo asado sobre una base untuosa y sedosa de patata ahumada", price: "21€", alergenos: "Moluscos, leche", maridaje: "Muga blanco, Tinto joven" },
-                    { name: "Hueso de Tuétano con Tostas de Cristal y Pico de Gallo", desc: "Hueso de tuétano asado, tostas de pan cristal y pico de gallo fresco", price: "21€", alergenos: "Gluten", maridaje: "Muga Crianza" }
+                    { name: "Hueso de Tuétano con Tostas de Cristal y Pico de Gallo", desc: "Hueso de tuétano asado, tostas de pan cristal y pico de gallo fresco", price: "21€", alergenos: "Gluten", maridaje: "Muga Crianza", prep: "15 min" }
                 ]
             },
             {
@@ -1825,6 +1825,9 @@
                             const name = i18n.name || item.name;
                             const alergenos = (i18n.alergenos && i18n.alergenos !== '') ? i18n.alergenos : item.alergenos;
                             const showAlergenos = alergenos && alergenos !== '—';
+                            const metaParts = [];
+                            if (showAlergenos) metaParts.push(`${t('drawer_alergenos')}: ${alergenos}`);
+                            if (item.prep) metaParts.push(`${t('drawer_prep')}: ${item.prep}`);
                             const idx = dishIdx++;
                             const prevGroup = catIdx > 0 ? sec.items[catIdx - 1].group : null;
                             const groupTitle = (item.group && item.group !== prevGroup) ? `<div class="carta-group-title">${t('filter_' + item.group)}</div>` : '';
@@ -1832,7 +1835,7 @@
                             <div class="carta-line" data-dish="${idx}" onclick="openDrawerById(${idx})">
                                 <div style="flex:1;min-width:0;">
                                     <span class="carta-line-name">${name}</span>
-                                    ${showAlergenos ? `<span class="carta-line-desc">${t('drawer_alergenos')}: ${alergenos}</span>` : ''}
+                                    ${metaParts.length ? `<span class="carta-line-desc">${metaParts.join(' · ')}</span>` : ''}
                                 </div>
                                 <div class="carta-line-dots"></div>
                                 <div class="carta-line-price-wrap">
@@ -1864,10 +1867,10 @@
             const name = i18n.name || item.name;
             const alergenos = (i18n.alergenos && i18n.alergenos !== '') ? i18n.alergenos : item.alergenos;
             const cat = t('filter_' + item.category) || item.section;
-            openDrawer(cat, name, item.price, alergenos, item.maridaje);
+            openDrawer(cat, name, item.price, alergenos, item.maridaje, item.prep);
         }
 
-        function openDrawer(cat, name, price, alergenos, maridaje) {
+        function openDrawer(cat, name, price, alergenos, maridaje, prep) {
             document.getElementById('d-cat').textContent = cat;
             document.getElementById('d-name').textContent = name;
 
@@ -1896,6 +1899,13 @@
                 document.getElementById('d-maridaje').textContent = maridaje;
             } else {
                 if (maridajeWrap) maridajeWrap.style.display = 'none';
+            }
+            const prepWrap = document.getElementById('d-prep-wrap');
+            if (prep) {
+                if (prepWrap) prepWrap.style.display = '';
+                document.getElementById('d-prep').textContent = prep;
+            } else {
+                if (prepWrap) prepWrap.style.display = 'none';
             }
             document.getElementById('carta-drawer').classList.add('open');
             document.getElementById('carta-overlay').classList.add('open');
@@ -2256,6 +2266,10 @@
                 <div id="d-maridaje-wrap">
                     <span data-i18n="drawer_maridaje" style="font-size:7px; text-transform:uppercase; letter-spacing:0.45em; color:rgba(0,0,0,0.22); font-weight:700; display:block; margin-bottom:8px;">Maridaje</span>
                     <p id="d-maridaje" style="font-size:0.82rem; color:var(--gold); font-style:italic; font-weight:400; margin:0; line-height:1.6;"></p>
+                </div>
+                <div id="d-prep-wrap">
+                    <span data-i18n="drawer_prep" style="font-size:7px; text-transform:uppercase; letter-spacing:0.45em; color:rgba(0,0,0,0.22); font-weight:700; display:block; margin-bottom:8px;">Preparación</span>
+                    <p id="d-prep" style="font-size:0.82rem; color:#777; font-weight:300; margin:0; line-height:1.6;"></p>
                 </div>
             </div>
             <div style="position:absolute; bottom:0; left:0; right:0; padding:32px 40px; border-top:1px solid rgba(0,0,0,0.06); display:flex; align-items:baseline; justify-content:space-between; background:#fff;">
