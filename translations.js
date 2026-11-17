@@ -4,7 +4,7 @@
 ============================================================ */
 const translations = {
   es: {
-    nav_elArroz: "El Arroz", nav_laCarta: "La Carta", nav_laBodega: "La Bodega", nav_reserva: "Reserva",
+    nav_elArroz: "El Arroz", nav_laCarta: "La Carta", nav_laBodega: "La Bodega", nav_club: "El Club", nav_reserva: "Reserva",
     hero_title: "Donde el arroz cuenta una historia de",
     hero_highlight: "sabor y tradición",
     hero_cta: "Explorar La Carta",
@@ -101,7 +101,7 @@ const translations = {
   },
 
   eu: {
-    nav_elArroz: "Arroza", nav_laCarta: "Menua", nav_laBodega: "Bodega", nav_reserva: "Erreserba",
+    nav_elArroz: "Arroza", nav_laCarta: "Menua", nav_laBodega: "Bodega", nav_club: "Kluba", nav_reserva: "Erreserba",
     hero_title: "Non arrozak kontatzen du",
     hero_highlight: "zapore eta tradizioaren historia",
     hero_cta: "Menua Ezagutu",
@@ -198,7 +198,7 @@ const translations = {
   },
 
   fr: {
-    nav_elArroz: "Le Riz", nav_laCarta: "La Carte", nav_laBodega: "La Cave", nav_reserva: "Réserver",
+    nav_elArroz: "Le Riz", nav_laCarta: "La Carte", nav_laBodega: "La Cave", nav_club: "Le Club", nav_reserva: "Réserver",
     hero_title: "Où le riz raconte une histoire de",
     hero_highlight: "saveur et tradition",
     hero_cta: "Explorer la Carte",
@@ -295,7 +295,7 @@ const translations = {
   },
 
   en: {
-    nav_elArroz: "The Rice", nav_laCarta: "The Menu", nav_laBodega: "The Wine Cellar", nav_reserva: "Reserve",
+    nav_elArroz: "The Rice", nav_laCarta: "The Menu", nav_laBodega: "The Wine Cellar", nav_club: "The Club", nav_reserva: "Reserve",
     hero_title: "Where rice tells a story of",
     hero_highlight: "flavour and tradition",
     hero_cta: "Explore the Menu",
