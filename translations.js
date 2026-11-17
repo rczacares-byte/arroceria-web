@@ -4,6 +4,7 @@
 ============================================================ */
 const translations = {
   es: {
+    club_label: "El Club La Terreta", club_title: "Cada visita<br>tiene premio.", club_intro: "Hazte socio gratis en un minuto. Sumas puntos cada vez que comes con nosotros y los cambias por postres, vino, arroces… o una clase de paella con el chef.", club_v1_t: "1.200 puntos de bienvenida", club_v1_p: "Empiezas con puntos y, si vuelves en 30 días, el postre va por la casa.", club_v2_t: "Puntos en cada visita", club_v2_p: "10 puntos por cada euro. Enseña tu tarjeta al pagar y se suman al momento.", club_v3_t: "Sube de rango", club_v3_p: "Bronce, Plata, Oro y Platino: cuanto más vienes, más puntos por euro (hasta ×1,75) y más detalles en la mesa.", club_v4_t: "Regalo de cumpleaños", club_v4_p: "Dinos cuándo es y celébralo con nosotros: el postre corre de nuestra cuenta.", club_cta: "Únete al club", club_entrar: "Ya soy socio · Entrar", club_nota: "Sin cuotas ni tarjetas de plástico: tu tarjeta vive en el móvil.", club_card_pts: "Puntos", club_card_socio: "Socio Nº 0482",
     nav_elArroz: "El Arroz", nav_laCarta: "La Carta", nav_laBodega: "La Bodega", nav_club: "El Club", nav_reserva: "Reserva",
     hero_title: "Donde el arroz cuenta una historia de",
     hero_highlight: "sabor y tradición",
@@ -101,6 +102,7 @@ const translations = {
   },
 
   eu: {
+    club_label: "La Terreta Kluba", club_title: "Bisita bakoitzak<br>badu saria.", club_intro: "Egin zaitez bazkide doan minutu batean. Gurekin jaten duzun bakoitzean puntuak batzen dituzu, eta postreak, ardoa, arrozak… edo sukaldariarekin paella-klase bat lor ditzakezu.", club_v1_t: "1.200 ongietorri-puntu", club_v1_p: "Puntuekin hasten zara, eta 30 egunetan itzultzen bazara, postrea etxearen kontura.", club_v2_t: "Puntuak bisita bakoitzean", club_v2_p: "10 puntu euro bakoitzeko. Erakutsi zure txartela ordaintzean eta berehala batuko dira.", club_v3_t: "Igo mailaz", club_v3_p: "Brontzea, Zilarra, Urrea eta Platinoa: zenbat eta gehiago etorri, orduan eta puntu gehiago euroko (×1,75 arte) eta xehetasun gehiago mahaian.", club_v4_t: "Urtebetetze-oparia", club_v4_p: "Esan iezaguzu noiz den eta ospatu gurekin: postrea gure kontura.", club_cta: "Egin zaitez bazkide", club_entrar: "Bazkidea naiz · Sartu", club_nota: "Kuotarik eta plastikozko txartelik gabe: zure txartela mugikorrean dago.", club_card_pts: "Puntuak", club_card_socio: "Bazkide zk. 0482",
     nav_elArroz: "Arroza", nav_laCarta: "Menua", nav_laBodega: "Bodega", nav_club: "Kluba", nav_reserva: "Erreserba",
     hero_title: "Non arrozak kontatzen du",
     hero_highlight: "zapore eta tradizioaren historia",
@@ -198,6 +200,7 @@ const translations = {
   },
 
   fr: {
+    club_label: "Le Club La Terreta", club_title: "Chaque visite<br>est récompensée.", club_intro: "Devenez membre gratuitement en une minute. Vous cumulez des points à chaque repas chez nous et les échangez contre des desserts, du vin, des riz… ou un cours de paella avec le chef.", club_v1_t: "1 200 points de bienvenue", club_v1_p: "Vous commencez avec des points et, si vous revenez sous 30 jours, le dessert est offert.", club_v2_t: "Des points à chaque visite", club_v2_p: "10 points par euro. Montrez votre carte au moment de payer et ils s’ajoutent aussitôt.", club_v3_t: "Montez en niveau", club_v3_p: "Bronze, Argent, Or et Platine : plus vous venez, plus vous gagnez de points par euro (jusqu’à ×1,75) et d’attentions à table.", club_v4_t: "Cadeau d’anniversaire", club_v4_p: "Dites-nous quand c’est et fêtez-le avec nous : le dessert est pour nous.", club_cta: "Rejoindre le club", club_entrar: "Déjà membre · Se connecter", club_nota: "Sans abonnement ni carte en plastique : votre carte est dans votre téléphone.", club_card_pts: "Points", club_card_socio: "Membre nº 0482",
     nav_elArroz: "Le Riz", nav_laCarta: "La Carte", nav_laBodega: "La Cave", nav_club: "Le Club", nav_reserva: "Réserver",
     hero_title: "Où le riz raconte une histoire de",
     hero_highlight: "saveur et tradition",
@@ -295,6 +298,7 @@ const translations = {
   },
 
   en: {
+    club_label: "The La Terreta Club", club_title: "Every visit<br>is rewarded.", club_intro: "Join for free in a minute. You earn points every time you eat with us and swap them for desserts, wine, rice dishes… or a paella class with the chef.", club_v1_t: "1,200 welcome points", club_v1_p: "You start with points and, if you come back within 30 days, dessert is on the house.", club_v2_t: "Points on every visit", club_v2_p: "10 points for every euro. Show your card when you pay and they’re added instantly.", club_v3_t: "Level up", club_v3_p: "Bronze, Silver, Gold and Platinum: the more you visit, the more points per euro (up to ×1.75) and the more treats at the table.", club_v4_t: "Birthday gift", club_v4_p: "Tell us when it is and celebrate with us: dessert is on us.", club_cta: "Join the club", club_entrar: "Already a member · Sign in", club_nota: "No fees, no plastic cards: your card lives on your phone.", club_card_pts: "Points", club_card_socio: "Member No. 0482",
     nav_elArroz: "The Rice", nav_laCarta: "The Menu", nav_laBodega: "The Wine Cellar", nav_club: "The Club", nav_reserva: "Reserve",
     hero_title: "Where rice tells a story of",
     hero_highlight: "flavour and tradition",
